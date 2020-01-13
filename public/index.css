@@ -1,0 +1,34 @@
+body {
+  background-color: #d9d9d9;
+}
+
+.myheader {
+  padding: 1rem 2rem;
+  background: #0d0d0d;
+}
+.myheader > h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.todoitem {
+  color: #404040;
+  padding: 4vh 1vh;
+  box-sizing: border-box;
+  border-bottom: solid #595959 1px;
+  font-weight: bold;
+}
+
+.todolist {
+  margin-top: 6vh;
+  box-sizing: border-box;
+  box-shadow: #595959 1vh 1vh 2vh;
+  background: #f2f2f2;
+}
+
+.todoitem:first-of-type,
+.todoitem:last-of-type {
+  border-bottom: none;
+}
