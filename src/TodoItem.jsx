@@ -8,9 +8,9 @@ export default function TodoItem(props) {
           <input
             type="checkbox"
             className="custom-control-input"
-            id="customCheck1"
+            id={"cb" + props.id}
           />
-          <label class="custom-control-label" for="customCheck1">
+          <label className="custom-control-label" htmlFor={"cb" + props.id}>
             {props.item}
           </label>
         </div>

@@ -1,19 +1,21 @@
 import React from "react";
 
-export default function NewTodoItem() {
+export default function NewTodoItem(props) {
   return (
     <div className="todoitem newTodoItem">
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="What is on your mind ?"
+          id="newTodoText"
         />
-        <div class="input-group-append">
+        <div className="input-group-append">
           <button
-            class="btn btn-outline-secondary"
+            className="btn btn-outline-secondary"
             type="button"
             id="button-addon2"
+            onClick={props.handler}
           >
             Add
           </button>
