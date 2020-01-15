@@ -4,7 +4,7 @@ export default function NewTodoItem(props) {
   const [state, setstate] = useState("");
   const handler = e => {
     e.preventDefault();
-    props.handler(state);
+    if (state.length > 0) props.handler(state);
     setstate("");
   };
   return (
