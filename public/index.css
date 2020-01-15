@@ -3,14 +3,11 @@ body {
 }
 
 .myheader {
-  padding: 1rem 2rem;
-  background: #0d0d0d;
-}
-.myheader > h1 {
-  color: white;
+  color: #0d0d0d;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   text-align: center;
+  font-size: 10vh;
 }
 
 .todoitem {

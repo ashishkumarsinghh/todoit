@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Header() {
   return (
-    <React.Fragment>
-      <div className="myheader">
-        <h1>AshTodo</h1>
+    <div className="row">
+      <div className="col">
+        <div className="myheader">Todo.it</div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }

@@ -22,7 +22,7 @@ export default function NewTodoItem(props) {
         />
         <div className="input-group-append">
           <button
-            className="btn btn-outline-secondary"
+            className="btn btn-dark"
             type="button"
             id="button-addon2"
             onClick={handler}
