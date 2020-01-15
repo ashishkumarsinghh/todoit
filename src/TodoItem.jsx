@@ -3,7 +3,7 @@ import React from "react";
 export default function TodoItem(props) {
   return (
     <React.Fragment>
-      <div className="todoitem">
+      <div className="alert alert-dark" role="alert">
         <div className="custom-control custom-checkbox">
           <input
             type="checkbox"
