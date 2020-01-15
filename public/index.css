@@ -28,7 +28,6 @@ body {
   background: #f2f2f2;
 }
 
-.todoitem:first-of-type,
 .todoitem:last-of-type {
   border-bottom: none;
 }

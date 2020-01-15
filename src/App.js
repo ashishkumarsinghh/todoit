@@ -11,8 +11,7 @@ export default class App extends Component {
     };
   }
 
-  addTodo(e) {
-    e.preventDefault();
+  addTodo(newItem) {
     this.setState(prevState => {
       return {
         ...prevState,
@@ -20,13 +19,12 @@ export default class App extends Component {
           ...prevState.todoitems,
           {
             id: prevState.count + 1,
-            text: document.getElementById("newTodoText").value
+            text: newItem
           }
         ],
         count: prevState.count + 1
       };
     });
-    //document.getElementById("newTodoText").value = "";
   }
   componentDidMount() {}
   render() {
