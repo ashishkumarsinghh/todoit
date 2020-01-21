@@ -4,7 +4,13 @@ import NewTodoItem from "./NewTodoItem";
 
 export default function TodoList(props) {
   const listItems = props.items.map(obj => (
-    <TodoItem key={obj.id} item={obj.text} id={obj.id} />
+    <TodoItem
+      key={obj.id}
+      item={obj.text}
+      id={obj.id}
+      handler={props.handler}
+      completed={obj.completed}
+    />
   ));
   return (
     <div className="row justify-content-center ">
